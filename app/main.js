@@ -1,6 +1,6 @@
 import { PokiApiController } from "./Controllers/PokiApiController.js";
-import { CaughtPokiController } from "../app/Controllers/CaughtPokiController.js";
-import { CurrentPokiController } from "../app/Controllers/CurrentPokiController.js";
+import { CaughtPokiController } from "./Controllers/CaughtPokiController.js";
+import { CurrentPokiController } from "./Controllers/CurrentPokiController.js";
 
 
 class App {

@@ -9,7 +9,7 @@ const pokiApi = axios.create({
 class PokiApiService {
   async getPokiDetails(url){
     let res = await pokiApi.get(url)
-    ProxyState.currentPoki = new PokeApiPokemon(res.data)
+    ProxyState.currentPokemans = new PokeApiPokemon(res.data)
   }
   async getPokemon() {
     let res = await pokiApi.get('api/v2/pokemon/')

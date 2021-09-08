@@ -1,4 +1,4 @@
-export class CurrentPoki {
+export class CurrentPokemon {
   constructor(pokiData){
     this.id = pokiData.id
     this.name = pokiData.name

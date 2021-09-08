@@ -1,5 +1,5 @@
-import { ProxyState } from "../AppState.js";
-import { CaughtPokemonService} from "../Services/CaughtPokemonService.js";
+import { ProxyState } from "../AppState.js"
+import { caughtPokemonService} from "../Services/CaughtPokemonService.js"
 
 function _drawCaughtPokemon() {
   let template = ''
