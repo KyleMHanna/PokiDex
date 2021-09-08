@@ -4,9 +4,9 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   user = 'Kyle'
   /** @type {import('./Models/CurrentPoki').currentPokis[]} */
-  currentPokis = []
+  currentPokemans = []
   /** @type {import('./Models/CaughtPoki').caughtPokis[]} */
-  caughtPokis =[]
+  caughtPokemans =[]
   /** @type {import('./Models/PokeApiPokemon').apiPokis[]} */
   apiPokis = []
 } 

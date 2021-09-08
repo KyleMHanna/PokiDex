@@ -7,24 +7,12 @@ export class PokeApiPokemon {
       this.types = pokiData.types
       this.moves = pokiData.moves
       this.weight = pokiData.weight
+      this.url = pokiData.url
     }
 
-get Template() {
-  return /*html*/`
-  <div class="card elevation-2">
-        <div class="card-header">
-          <h3>${this.name}</h3>
-        </div>
-        <div class="card-body scrollable-y" style="max-height:50vh;">
-          <p>${this.abilities}</p>
-          <p>${this.types}</p>
-          <p>${this.moves}</p>
-          <p>${this.weight}</p>
-        </div>
-        <div class="card-footer">
-          <button class="btn btn-danger" onclick="app.pokiApiController.catchPokemon()">Catch</button>
-        </div>
-      </div>
+    get Template() {
+    return /*html*/`
+    <li class="list-group-item py-2 selectable" onclick="app.pokiApiController.getPokiDetails('${this.url}')">${this.name}</li>
     `
-}
+  }
 }

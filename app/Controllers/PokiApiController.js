@@ -13,7 +13,7 @@ export class PokiApiController {
   }
 async getPokiDetails(url){
   try {
-    
+  await pokiApiService.getPokiDetails(url)
   } catch (error) {
     // todo Sweeeet alert
     console.error('⚠ [GET_POKi_DETAILS]', error)

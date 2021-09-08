@@ -2,6 +2,7 @@ export class CaughtPokemon {
     constructor (pokiData){
       this.name = pokiData.name
       this.weight = pokiData.weight
+      this.heal =pokiData.heal
       this.abilities = pokiData.abilities
       this.id = pokiData.id
       this.types = pokiData.types
@@ -12,7 +13,7 @@ export class CaughtPokemon {
 
   get Template() {
     return /*html*/`
-      <li class="list-group-item py-2 selectable" onclick="app.pokiApiController.getPokiDetails('${this.url}')">${this.name}</li>
+      <li class="list-group-item py-2 selectable"onclick="app.caughtPokiController.getPokiDetails('${this.url}')">${this.name}</li>
     `
   }
 
