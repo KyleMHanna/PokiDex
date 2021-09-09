@@ -3,7 +3,8 @@ import { pokiApiService } from '../Services/PokiApiService.js';
 
 function _drawPoki (){
   let template = ''
-  ProxyState.apiPokis.forEach(poki => template += poki.Template)
+
+  ProxyState.apiPokis.forEach(pokemon => template += pokemon.Template)
     document.getElementById('poki-list').innerHTML = template
 }
 export class PokiApiController {

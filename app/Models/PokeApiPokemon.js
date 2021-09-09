@@ -3,7 +3,8 @@ export class PokeApiPokemon {
       this.name = pokiData.name
       this.weight = pokiData.weight
       this.abilities = pokiData.abilities
-      this.id = pokiData.id
+      this.id = pokiData.index
+      this.index = pokiData.index
       this.types = pokiData.types
       this.moves = pokiData.moves
       this.weight = pokiData.weight
@@ -12,7 +13,7 @@ export class PokeApiPokemon {
 
     get Template() {
     return /*html*/`
-    <li class="list-group-item py-2 selectable" onclick="app.pokiApiController.getPokiDetails('${this.url}')">${this.name}</li>
+    <li class="list-group-item py-2 selectable" onclick="app.pokiApiController.getPokemonDetails('${this.url}')">${this.name}</li>
     `
   }
 }

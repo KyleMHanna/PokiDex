@@ -14,11 +14,11 @@ async togglePokiDex(pokiId){
 async catchPokemon(){
   const pokemonToCatch = new CaughtPokemon(ProxyState.currentPoki)
   let res = await sandboxApi.post(`${ProxyState.user}/pokemon`, pokemonToCatch)
-  ProxyState.caughtPokis = [...ProxyState.caughtPokis, new CaughtPokemon(res.data)]
+  ProxyState.caughtPokemons = [...ProxyState.caughtPokemons, new CaughtPokemon(res.data)]
 }
 async getPokemon() {
   let res = await sandboxApi.get(`${ProxyState.user}/pokemon`)
-  ProxyState.caughtPokis = res.data.map(p => new CaughtPokemon(p))
+  ProxyState.caughtPokemons = res.data.map(p => new CaughtPokemon(p))
 }
 }
 export const caughtPokemonService = new CaughtPokemonService()

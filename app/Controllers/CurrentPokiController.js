@@ -10,7 +10,7 @@ function _drawCurrentPoki() {
 export class CurrentPokiController {
   constructor() {
     ProxyState.on('currentPoki', _drawCurrentPoki)
-    caughtPokemonService.getPoki()
+    caughtPokemonService.getPokemon()
   }
 async catchPokemon() {
   try {

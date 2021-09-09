@@ -13,7 +13,7 @@ export class CaughtPokemon {
 
   get Template() {
     return /*html*/`
-      <li class="list-group-item py-2 selectable"onclick="app.caughtPokiController.getPokiDetails('${this.url}')">${this.name}</li>
+      <li class="list-group-item py-2 selectable"onclick="app.caughtPokiController.getPokemonDetails('${this.url}')">${this.name}</li>
     `
   }
 
