@@ -12,13 +12,13 @@ async togglePrepared(pokiId){
   await sandboxApi.put(`${ProxyState.user}/pokemon/${pokiId}`, pokemon)
 }
 async catchPokemon(){
-  const pokemonToCatch = new SandboxPokemon(ProxyState.currentPokemon)
+  const pokemonToCatch = new SandBoxPokemon(ProxyState.currentPokemon)
   let res = await sandboxApi.post(`${ProxyState.user}/pokemon`, pokemonToCatch)
-  ProxyState.sandboxPokemons = [...ProxyState.sandboxPokemons, new SandboxPokemon(res.data)]
+  ProxyState.sandboxPokemons = [...ProxyState.sandboxPokemons, new SandBoxPokemon(res.data)]
 }
 async getPokemon() {
   let res = await sandboxApi.get(`${ProxyState.user}/pokemon`)
-  ProxyState.sandboxPokemons = res.data.map(p => new SandboxPokemon(p))
+  ProxyState.sandboxPokemons = res.data.map(p => new SandBoxPokemon(p))
 }
 }
 export const sandBoxService = new SandBoxService()

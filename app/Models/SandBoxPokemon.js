@@ -3,10 +3,7 @@ export class SandBoxPokemon {
       this.name = pokiData.name
       this.weight = pokiData.weight
       this.prepared =pokiData.prepared
-      this.abilities = pokiData.abilities
       this.id = pokiData.id
-      this.types = pokiData.types
-      this.moves = pokiData.moves
       this.weight = pokiData.weight
       this.url = pokiData.url
     }

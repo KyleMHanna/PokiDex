@@ -1,5 +1,5 @@
 import { ProxyState } from "../AppState.js";
-import { sandBoxService }from "../Services/sandBoxService.js";
+import { sandBoxService }from "../Services/SandBoxService.js";
 
 function _drawCurrentPoki() {
   let template = '' 
