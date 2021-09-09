@@ -7,7 +7,7 @@ const sandboxApi = axios.create({
 
 class SandBoxService {
 async togglePrepared(pokiId){
-  const pokemon = ProxyState.SandboxPokemon.find(p=> p.id === pokiId)
+  const pokemon = ProxyState.sandBoxPokemon.find(p=> p.id === pokiId)
   pokemon.prepared = !pokemon.prepared
   await sandboxApi.put(`${ProxyState.user}/pokemon/${pokiId}`, pokemon)
 }

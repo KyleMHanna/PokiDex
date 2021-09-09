@@ -5,8 +5,6 @@ export class PokemonDetail {
     this.name = pokiData.name
     this.weight = pokiData.weight
     this.height = pokiData.height
-    this.moves = pokiData.moves
-    this.weight = pokiData.weight
     this.imgUrl = pokiData.sprites.front_shiny
   }
 

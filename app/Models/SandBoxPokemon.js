@@ -2,10 +2,11 @@ export class SandBoxPokemon {
     constructor (pokiData){
       this.name = pokiData.name
       this.weight = pokiData.weight
+      this.user = pokiData.user
       this.prepared =pokiData.prepared
       this.id = pokiData.id
       this.weight = pokiData.weight
-      this.url = pokiData.url
+
     }
 
   get Template() {
