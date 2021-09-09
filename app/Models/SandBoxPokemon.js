@@ -1,8 +1,8 @@
-export class CaughtPokemon {
+export class SandBoxPokemon {
     constructor (pokiData){
       this.name = pokiData.name
       this.weight = pokiData.weight
-      this.heal =pokiData.heal
+      this.prepared =pokiData.prepared
       this.abilities = pokiData.abilities
       this.id = pokiData.id
       this.types = pokiData.types
@@ -13,7 +13,10 @@ export class CaughtPokemon {
 
   get Template() {
     return /*html*/`
-      <li class="list-group-item py-2 selectable"onclick="app.caughtPokiController.getPokemonDetails('${this.url}')">${this.name}</li>
+      <li class="list-group-item py-2 selectable">
+      <input type="checkbox" ${this.prepared ? 'checked' : ''} onclick="app.pokemonBookController.togglePrepared('${this.id}')">
+      <span class= "ms-2">${this.name}</span>
+      </li>
     `
   }
 

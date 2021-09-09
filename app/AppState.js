@@ -3,12 +3,12 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   user = 'Kyle'
-  /** @type {import('./Models/CurrentPokemon.js').CurrentPokemon[]} */
-  currentPokemons = []
-  /** @type {import('./Models/CaughtPokemon.js').caughtPokemon[]} */
-  caughtPokemons = []
-  /** @type {import('./Models/PokeApiPokemon.js').apiPokis} */
-  apiPokis = null
+  /** @type {import('./Models/SandboxPokemon.js').SandboxPokemon[]} */
+  sandboxPokemons = []
+  /** @type {import('./Models/ListPokemon.js').ListPokemon[]} */
+  apiPokemons = []
+  /** @type {import('./Models/PokemonDetail.js').PokemonDetail[]} */
+  currentPokemon = []
 } 
 
 export const ProxyState = new Proxy(new AppState(), {
