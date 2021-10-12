@@ -16,17 +16,21 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-primary text-light no-select">
+    <nav class="navbar navbar-dark navbar-expand bg-primary text-light justify-content-center ">
+      <!-- pokiball in header -->
+      <div class="box">
 
-      <div class="box"></div>
-      <h1>PokiDex</h1>
+      </div>
+      <h1><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="" style="max-width: 100px;"></h1>
     </nav>
   </header>
-  <main>
+  <main class="pokemonBackround">
     <div class="container-fluid">
       <div class="row py-3">
         <div class="col-lg-2">
-          <ul id="poki-list" class="list-group scrollable-y" style="max-height: 80vh;">
+          <ul id="poki-list" class="list-group scrollable-y" style="max-height: 100vh;">
             <!-- pokiApi go here -->
           </ul>
         </div>
@@ -35,17 +39,15 @@
         <!-- pokemon you can choose to catch -->
 
         <div class="col-lg-4">
-          <ul id="sandbox-poki" class="list-group scrollable-y" style="max-height: 80vh;">
+          <ul id="sandbox-poki" class="list-group scrollable-y" style="max-height: 100vh;">
             <!-- caught poki  GO HERE -->
           </ul>
         </div>
       </div>
     </div>
   </main>
-  <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p><small>Made with 💖 by Kyle Hanna</small></p>
-    </div>
+  <footer class="bg-primary text-light">
+
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
     integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="

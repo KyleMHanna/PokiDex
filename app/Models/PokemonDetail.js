@@ -1,17 +1,17 @@
 export class PokemonDetail {
-  constructor(pokiData){
+  constructor(pokiData) {
     this.index = pokiData.index
     this.id = pokiData.index
     this.url = pokiData.url
-    this.name = pokiData.species.name 
+    this.name = pokiData.species.name
     this.weight = pokiData.weight
     this.height = pokiData.height
     this.imgUrl = pokiData.sprites.front_shiny
     this.experience = pokiData.base_experience
   }
 
-get Template() {
-  return /*html*/`
+  get Template() {
+    return /*html*/`
   <div class="card elevation-2">
         <div class="card-header">
           <h3>${this.name}</h3>
@@ -27,5 +27,5 @@ get Template() {
         </div>
       </div>
     `
-}
+  }
 }
