@@ -3,8 +3,8 @@ import { pokiService } from "../Services/PokiService.js"
 
 
 function _drawCurrentPokemon() {
-  // let template = ''
-  // ProxyState.caughtPokemons.forEach(p=> template += p.Template)
+  let template = ''
+  ProxyState.sandboxPokemons.forEach(p => template += p.Template)
   document.getElementById('current-poki').innerHTML = ProxyState.currentPokemon.Template
 }
 

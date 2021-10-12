@@ -8,8 +8,8 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/ListPokemon.js').ListPokemon[]} */
   apiPokemons = []
   /** @type {import('./Models/PokemonDetail.js').PokemonDetail} */
-  currentPokemon = []
-} 
+  currentPokemon = null
+}
 
 export const ProxyState = new Proxy(new AppState(), {
   get(target, prop) {
