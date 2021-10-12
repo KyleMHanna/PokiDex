@@ -1,6 +1,7 @@
 export class SandBoxPokemon {
     constructor (pokiData){
       this.name = pokiData.name
+      this.type = pokiData.type
       this.weight = pokiData.weight
       this.user = pokiData.user
       this.prepared =pokiData.prepared
